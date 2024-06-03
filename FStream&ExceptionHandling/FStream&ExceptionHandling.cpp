@@ -6,3 +6,8 @@ using namespace std;
 int main() {
 	string baris;
 
+	ofstream outfile;
+	//membuat objek
+	outfile.open("ContohFile.txt");
+
+}
