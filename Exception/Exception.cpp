@@ -10,7 +10,10 @@ int main() {
 		array<int, 3> data = { 1,2,3 };
 		cout << data.at(5) << endl;
 	}
-	
+	catch (exception& e) {
+		cout << e.what() << endl;
+	}
+	cout << "Baris program yang terakhir" << endl;
 }
 
 
