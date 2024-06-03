@@ -16,5 +16,16 @@ int main() {
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
+
+	//unlimited loop
+	while (true) {
+		cout << "- ";
+		getline(cin, baris);
+		if (baris == "q") break;
+		outfile << baris << endl;
+	}
+	outfile.close();
+
+	
 }
 
