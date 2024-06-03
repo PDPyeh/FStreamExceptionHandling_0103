@@ -10,4 +10,15 @@ int main() {
 	//membuat objek
 	outfile.open("ContohFile.txt");
 
+	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+
+	//unlimited loop
+	while(true) {
+		cout << "- ";
+		getline(cin, baris);
+		if (baris == "q") break;
+		outfile << baris << endl;
+	}
+	
 }
+
